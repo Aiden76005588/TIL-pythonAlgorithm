@@ -55,9 +55,9 @@ print(combinations_with_replacement_result)
 from collections import Counter
 
 counter = Counter(['red', 'blue', 'red', 'blue', 'red', 'blue', 'green'])
-print(counter['blue']) #등장횟수
+print(counter['blue'])  # 등장횟수
 print(counter['green'])
-print(dict(counter)) # 사전 자료형으로 반환
+print(dict(counter))  # 사전 자료형으로 반환
 
 ## heapq: 힙(heap) 자료구조를 제공한다.
 ## 일반적으로 우선순위 큐 기능을 구현하기 위해 사용된다.
@@ -68,3 +68,18 @@ print(dict(counter)) # 사전 자료형으로 반환
 
 ## math : 필수적인 수학적 기능을 제공한다.
 ## 팩토리얼, 제곰근, 최대공약수(GCD), 삼각함수 관련 함수부터 파이(pi)와 같은 상수를 포함한다.
+## GCD (Greatest Common Divisor) 최대공약수
+
+import math
+
+
+# 최소 공배수(LCM)를 구하는 함수
+def lcm(a, b):
+    return a * b // math.gcd(a, b)
+
+
+a = 21
+b = 14
+
+print(math.gcd(21, 14))
+print(lcm(21, 14))

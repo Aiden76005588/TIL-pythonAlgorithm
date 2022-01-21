@@ -1,6 +1,13 @@
+# 2차원공간에서의 방향벡터
+#       동  북  서  남
+# dx = [0, -1, 0, 1]
+# dy = [1, 0, -1, 0]
+
+
 # N 입력받기
 n = int(input())
 x, y = 1, 1
+
 plans = input().split()
 
 # L, R, U, D에 따른 이동방향
@@ -12,6 +19,7 @@ move_types = ['L', 'R', 'U', 'D']
 for plan in plans:
     # 이동 후 좌표 구하기
     for i in range(len(move_types)):
+
         if plan == move_types[i]:
             nx = x + dx[i]
             ny = y + dy[i]

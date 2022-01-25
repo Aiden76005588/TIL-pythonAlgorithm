@@ -43,3 +43,23 @@ def solution(id_list, report, k):
                 answer[i] += 1
 
     return answer
+
+# 프로그래머스 답안
+# from collections import defaultdict
+#
+#
+# def solution(id_list, report, k):
+#     answer = [0] * len(id_list)
+#     reports = {x: 0 for x in id_list}
+#     print(reports)
+#     print(answer)
+#
+#     for r in set(report):
+#         reports[r.split()[1]] += 1
+#         print(reports)
+#
+#     for r in set(report):
+#         if reports[r.split()[1]] >= k:
+#             answer[id_list.index(r.split()[0])] += 1
+#
+#     return answer
